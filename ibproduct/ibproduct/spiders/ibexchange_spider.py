@@ -53,7 +53,4 @@ class IBExchangeSpider(scrapy.Spider):
                 strip_extract(
                     row.xpath('td[%s]/text()' % (4 + col_adj)).extract())
             item['products_cat'] = ps['p']
-            if idx == 0:
-                print row.extract()
-                print item
             yield item
