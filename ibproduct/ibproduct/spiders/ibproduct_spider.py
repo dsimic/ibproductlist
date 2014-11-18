@@ -1,6 +1,7 @@
 import scrapy
 from scrapy.selector import Selector
 from ibproduct.items import IBProductItem
+from urlparse import parse_qs, urlparse
 
 
 class IBProductSpider(object):
@@ -10,12 +11,19 @@ class IBProductSpider(object):
         hxs = Selector(response)
         rows = hxs.xpath(
             '//table[@class="comm_table_background"]/tr[@class="linebottom"]')
+        ps = parse_qs(urlparse(response.url).query,
+                      keep_blank_values=True)
+        assert ps.keys() == ['f']
+        assert len(ps['f']) == 1
+        ps = parse_qs(urlparse(ps['f'][0]).query)
         for row in rows:
             item = IBProductItem()
             item['ib_symbol'] = row.xpath('td[1]/text()').extract()
             item['symbol'] = row.xpath('td[3]/text()').extract()
             item['currency'] = row.xpath('td[4]/text()').extract()
             item['product_description'] = row.xpath('td[2]/a/text()').extract()
+            item['exchange'] = ps['exch']
+            item['ib_category'] = ps['showcategories']
             yield item
 
 

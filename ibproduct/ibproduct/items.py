@@ -15,3 +15,5 @@ class IBProductItem(scrapy.Item):
     product_description = scrapy.Field()
     symbol = scrapy.Field()
     currency = scrapy.Field()
+    exchange = scrapy.Field()
+    ib_category = scrapy.Field()
