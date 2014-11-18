@@ -1,8 +1,5 @@
-Ä}q(U/usr/lib/python2.7/pkgutil.py}q(Ufind_loaderqcrope.base.oi.memorydb
+Ä}q(UR/home/david/Envs/ibprodlist/lib/python2.7/site-packages/scrapy/selector/unified.py}qUSelector.xpathcrope.base.oi.memorydb
 ScopeInfo
-q)Åq}qUunknownÖqÖUinstanceqUdefinedq	U/usr/lib/python2.7/pkgutil.pyU	ImpLoaderq
-áÜs}qÜbUImpLoader.get_datah)Åq}qhh	U/usr/lib/python2.7/pkgutil.pyh
-áÜUunknownÖqÜUbuiltinqUlistqUbuiltinUstrÜqás}qÜbUget_dataqh)Åq}qhhÜhhhás}qÜbUiter_importersqh)Åq}qhÖhU	generatorqhh	U/usr/lib/python2.7/pkgutil.pyUImpImporterqáÜás}qÜbU
-get_loaderqh)Åq}qhÖhh	U/usr/lib/python2.7/pkgutil.pyh
-áÜs}q ÜbUImpImporter.find_moduleh)Åq!}q"hh	U/usr/lib/python2.7/pkgutil.pyháÜhUnoneÖq#áhh	U/usr/lib/python2.7/pkgutil.pyh
-áÜs}q$ÜbuU/usr/lib/python2.7/urlparse.py}q%(Uparse_qsq&h)Åq'}q(h#h#h#á(hUdictq)h#h#ts}q*ÜbUurlparseq+h)Åq,}q-h#h#h#áhh	U/usr/lib/python2.7/urlparse.pyUParseResultq.áÜs}q/ÜbUResultMixin.porth)Åq0}q1hh	U/usr/lib/python2.7/urlparse.pyUResultMixinq2áÜÖhs}q3Übuu.
+q)Åq}qUinstanceqUdefinedqUR/home/david/Envs/ibprodlist/lib/python2.7/site-packages/scrapy/selector/unified.pyUSelectorqáÜUbuiltinUstrÜq	ÜUbuiltinq
+UlistqUunknownÖqás}qÜbsU/usr/lib/python2.7/pkgutil.py}q(Ufind_loaderh)Åq}qUunknownÖqÖUinstanceqUdefinedqU/usr/lib/python2.7/pkgutil.pyU	ImpLoaderqáÜs}qÜbUImpLoader.get_datah)Åq}qhhU/usr/lib/python2.7/pkgutil.pyháÜUunknownÖÜUbuiltinqUlistqUbuiltinUstrÜqás}qÜbUget_datah)Åq}qhhÜhhhás}qÜbUiter_importersh)Åq}q hÖhU	generatorhhU/usr/lib/python2.7/pkgutil.pyUImpImporterq!áÜás}q"ÜbU
+get_loaderh)Åq#}q$hÖhhU/usr/lib/python2.7/pkgutil.pyháÜs}q%ÜbUImpImporter.find_moduleh)Åq&}q'hhU/usr/lib/python2.7/pkgutil.pyh!áÜhUnoneÖq(áhhU/usr/lib/python2.7/pkgutil.pyháÜs}q)ÜbuU/usr/lib/python2.7/urlparse.py}q*(Uparse_qsh)Åq+}q,h(h(h(á(hUdicth(h(ts}q-ÜbUurlparseh)Åq.}q/h(h(h(áhhU/usr/lib/python2.7/urlparse.pyUParseResultáÜs}q0ÜbUResultMixin.porth)Åq1}q2hhU/usr/lib/python2.7/urlparse.pyUResultMixináÜÖhs}q3Übuu.

@@ -8,6 +8,15 @@
 import scrapy
 
 
+class IBExchangeItem(scrapy.Item):
+    country = scrapy.Field()
+    exchange = scrapy.Field()
+    market_center_details = scrapy.Field()
+    products_info = scrapy.Field()
+    hours_info = scrapy.Field()
+    products_cat = scrapy.Field()
+
+
 class IBProductItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
