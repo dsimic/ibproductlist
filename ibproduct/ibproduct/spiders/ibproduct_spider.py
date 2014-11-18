@@ -39,6 +39,16 @@ class IBNYSEProductSpider(IBProductSpider, scrapy.Spider):
     start_urls = [ib_plist_nyse_url % (100 * i) for i in range(1, 101)]
 
 
+ib_plist_pink_url = 'https://www.interactivebrokers.com/en/trading/' +\
+    'exchanges.php?exch=pink&showcategories=STK&showproducts=&' +\
+    'sequence_idx=%s&sortproducts=&ib_entity=llc#show'
+
+
+class IBPinkProductSpider(IBProductSpider, scrapy.Spider):
+    name = "IBProductPink"
+    start_urls = [ib_plist_pink_url % (100 * i) for i in range(1, 101)]
+
+
 ib_plist_mexi_url = 'https://www.interactivebrokers.com/en/trading/' +\
     'exchanges.php?exch=mexi&showcategories=STK&showproducts=&' +\
     'sequence_idx=%s&sortproducts=&ib_entity=llc#show'
@@ -66,3 +76,21 @@ ib_plist_globex_url = 'https://www.interactivebrokers.com/en/trading/' +\
 class IBGlobexProductSpider(IBProductSpider, scrapy.Spider):
     name = "IBProductGlobex"
     start_urls = [ib_plist_globex_url]
+
+
+ib_plist_mexder_url = 'https://www.interactivebrokers.com/en/trading/' +\
+    'exchanges.php?exch=mexder&showcategories=FUTGRP&ib_entity=llc'
+
+
+class IBMEXDERProductSpider(IBProductSpider, scrapy.Spider):
+    name = "IBProductMEXDER"
+    start_urls = [ib_plist_mexder_url]
+
+
+ib_plist_cde_url = 'https://www.interactivebrokers.com/en/trading/' +\
+    'exchanges.php?exch=cde&showcategories=FUTGRP&ib_entity=llc'
+
+
+class IBCDEProductSpider(IBProductSpider, scrapy.Spider):
+    name = "IBProductCDE"
+    start_urls = [ib_plist_cde_url]
