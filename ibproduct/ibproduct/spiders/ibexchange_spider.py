@@ -21,6 +21,11 @@ def strip_extract(xtract):
     return [x for x in map(lambda z: z.strip(), xtract) if x]
 
 
+def get_exchange(url):
+    ps = parse_qs(urlparse(url).query)
+    return ps['exch']
+
+
 class IBExchangeSpider(scrapy.Spider):
     name = "IBExchange"
     allowed_domains = ['interactivebrokers.com']
@@ -37,7 +42,7 @@ class IBExchangeSpider(scrapy.Spider):
         col_adj = -1
         for idx, row in enumerate(rows):
             item = IBExchangeItem()
-            tmp_country = row.xpath('td/b/text()').extract()
+            tmp_country = strip_extract(row.xpath('td/b/text()').extract())
             if tmp_country:
                 country = tmp_country
                 col_adj = 0
@@ -46,6 +51,8 @@ class IBExchangeSpider(scrapy.Spider):
             item['country'] = country
             item['market_center_details'] = \
                 strip_extract(row.xpath('td/a/text()').extract())
+            item['exchange'] = \
+                get_exchange(row.xpath('td/a/@href').extract()[0])
             item['products_info'] = \
                 strip_extract(
                     row.xpath('td[%s]/text()' % (3 + col_adj)).extract())
