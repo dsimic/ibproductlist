@@ -26,6 +26,23 @@ def get_exchange(url):
     return ps['exch']
 
 
+class REGIONS:
+    north_america = "North America"
+    europe = "Europe"
+    asia_pacific = "Asia-Pacific"
+
+
+def get_region_from_pact(pcat):
+    if pcat in set(['stk', 'fut', 'etf']):
+        return REGIONS.north_america
+    if pcat[0:7] == 'europe_':
+        return REGIONS.europe
+    elif pcat[0:5] == 'asia_':
+        return REGIONS.asia_pacific
+    else:
+        raise Exception
+
+
 class IBExchangeSpider(scrapy.Spider):
     name = "IBExchange"
     allowed_domains = ['interactivebrokers.com']

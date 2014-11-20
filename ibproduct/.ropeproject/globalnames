@@ -1,3 +1,3 @@
 €}q(Uibproduct.settings]q(UNEWSPIDER_MODULEqUSPIDER_MODULESqUBOT_NAMEqeUibproduct.items]q(UIBExchangeItemqUIBProductItemqeU	ibproduct]Uibproduct.pipelines]q	UIbproductPipelineq
 aUibproduct.spiders]U"ibproduct.spiders.ibproduct_spider]q(U	plist_stkqU
-plist_baseqUstart_urls_futqUfx_exchangesqU	plist_futqUstart_urls_fxqUstart_urls_stkqUIBProductSpiderqUstk_exchangesqUplist_fxqUfut_exchangesqeU#ibproduct.spiders.ibexchange_spider]q(Uget_exchangeqUIBExchangeSpiderqUproduct_catsqUbase_urlqUstrip_extractqeu.
+plist_baseqUstart_urls_futqUfx_exchangesqU	plist_futqUstart_urls_fxqUstart_urls_stkqUIBProductSpiderqUstk_exchangesqUplist_fxqUfut_exchangesqeU#ibproduct.spiders.ibexchange_spider]q(Uget_exchangeqUREGIONSqUIBExchangeSpiderqUproduct_catsqUbase_urlqUget_region_from_pactqUstrip_extractqeu.
